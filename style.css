@@ -1,0 +1,128 @@
+
+ body{
+    /* width: 1000px; 
+    margin: auto; */
+    background-color: rgb(240, 237, 237);
+} 
+
+li{
+    list-style: none;
+}
+
+nav{
+    background-color: aqua;
+}
+
+.menu{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.menu:hover{
+    color: white;
+    cursor: pointer;
+}
+
+/* banner css start here */
+.banner-container{
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(rgb(47, 173, 187), rgb(35, 212, 144));
+    border-radius: 10px;
+    box-shadow: 5px 5px 4px gray;
+    /* padding: 20px; */
+}
+
+.bn-image{
+    width: 500px;
+    height: 400px;
+}
+
+.banner-text{
+    margin-left: 80px;
+}
+
+.banner-title{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.banner-desc{
+    width: 400px;
+    font-size: 22px;
+    color: #f6f6f6f3;
+}
+
+.doctor-name{
+    color: rgb(4, 244, 248);
+}
+/* banner css end here */
+
+
+/* services css start here */
+
+.services-title{
+    font-size: 50px;
+    color: rgb(4, 244, 248);
+    font-weight: 500;
+}
+
+.services-desc{
+    width: 700px;
+    margin: auto;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+/* services css end here */
+
+
+/* all doctors css start here */
+
+.doctors-container{
+    padding: 25px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.doctors{
+    padding: 15px;
+    box-shadow: 5px 5px 8px gray;
+    border-radius: 10px;
+    width: 300px;
+    height: 420px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.doc-card-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+}
+
+#doc-search{
+    width: 60%;
+    border: none;
+    padding: 12px;
+}
+.doc-btn{
+    border: none;
+    padding: 12px;
+    color: white;
+    background-color: rgb(71, 71, 240);
+    width: 100px;
+    font-weight: 500;
+}
+
+/* all doctors css end here */
