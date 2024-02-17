@@ -100,7 +100,7 @@ nav{
     box-shadow: 5px 5px 8px gray;
     border-radius: 10px;
     width: 300px;
-    height: 420px;
+    height: 460px;
     text-align: center;
     margin-top: 30px;
 }
@@ -125,4 +125,70 @@ nav{
     font-weight: 500;
 }
 
+#noData{
+    display: none;
+}
+
+.nodata{
+    display: none;
+}
+
+#spinner{
+    display: none;
+}
+
 /* all doctors css end here */
+
+/* review css start here */
+
+.review-card{
+    width: 300px;
+    height: 350px;
+    box-shadow: 5px 5px 6px gray;
+    padding: 15px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.review-card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+}
+
+/* review css end here */
+
+/* footer section start here */
+
+footer{
+    margin-top: 40px;
+    padding: 50px;
+    background: linear-gradient(rgb(12, 241, 241), rgb(23, 149, 149));
+}
+
+.icon{
+    width: 50px;
+    /* height: 50px; */
+}
+
+/* footer section end here */
+
+
+/* doctor details page css start here */
+
+.doc-details-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 30px;
+    width: 55%;
+    margin: auto;
+}
+
+.doctor-image img{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+}
+
+/* doctor details page css end here */
