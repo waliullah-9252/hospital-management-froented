@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
+    <title>Profile</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- swiffy curosel -->
     <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
@@ -20,37 +20,31 @@
             <h3>Smart Care</h3>
         </div>
         <div class="nav-menu-contianer d-flex gap-3">
-            <li class="menu"><a class="text-decoration-none text-black" href="login.html">Login</a></li>
+            <li class="menu"><a  class="text-decoration-none text-black" href="index.html">Home</a></li>
+            <li class="menu">About Us</li>
+            <li class="menu">Contact Us</li>
+            <div class="dropdown">
+                <button class="btn btn-sm btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Profile
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="userDetails.html">Profile</a></li>
+                  <li><a class="dropdown-item" href="allAppoinment.html">All Appoinment</a></li>
+                  <li onclick="handleLogOut()"><a class="dropdown-item" href="login.html">Logout</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     <!-- nav file end here -->
 
 
-    <!-- login form strat here  -->
-    <div class="row login-container">
-        <div class="col-md-6">
-            <div class="login-img">
-                <img src="./image/register.png" alt="">
-            </div>
-        </div>
-        <div class="col-md-6">
-            <h3 class="login-title">Register</h3>
-            <div class="login-form">
-                <form action="" onsubmit="handleRegistration(event)">
-                    <input id="username" class="register-design" type="text" placeholder="Type Your Username" required><br>
-                    <input id="first_name" class="register-design" type="text" placeholder="Type Your First Name" required><br>
-                    <input id="last_name" class="register-design" type="text" placeholder="Type Your Last Name" required><br>
-                    <input id="email" class="register-design" type="email" placeholder="Type Your Email" required><br>
-                    <input id="password" class="register-design" type="password" placeholder="Type Your Possword" required><br>
-                    <input id="confirm_password" class="register-design" type="password" placeholder="Type Your Confirm Password" required><br>
-                    <p id="error" class="text-danger"></p>
-                    <button type="submit" class="login-btn">Register</button>
-                    <p class="login-desc">Alreday Have an account <a class="text-decoration-none" href="login.html">Login Now</a></p>
-                </form>
-            </div>
-        </div>
+    <!-- user details strat here  -->
+    <div id="user-details-container" class="user-details-container">
+        <!-- <div class="all-user">
+            
+        </div> -->
     </div>
-    <!-- login form end here  -->
+    <!-- user details end here  -->
     
 
 
@@ -94,6 +88,7 @@
     <script src="./app.js"></script>
     <script src="./auth.js"></script>
     <script src="./docDetails.js"></script>
+    <script src="./userDetails.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
      
     <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>

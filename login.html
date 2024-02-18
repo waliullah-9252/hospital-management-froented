@@ -20,10 +20,7 @@
             <h3>Smart Care</h3>
         </div>
         <div class="nav-menu-contianer d-flex gap-3">
-            <li class="menu"><a  class="text-decoration-none text-black" href="index.html">Home</a></li>
-            <li class="menu">About Us</li>
-            <li class="menu">Contact Us</li>
-            <li class="menu"><a class="text-decoration-none text-black" href="login.html">Login</a></li>
+            <li class="menu"><a class="text-decoration-none text-black" href="registration.html">Register</a></li>
         </div>
     </nav>
     <!-- nav file end here -->
@@ -40,9 +37,9 @@
             <h3 class="login-title">Login</h3>
             <div class="login-form">
                 <form action="">
-                    <input class="login-design" type="email" placeholder="Type Your Email" required><br>
-                    <input class="login-design" type="password" placeholder="Type Your Possword" required><br>
-                    <button type="submit" class="login-btn">Login</button>
+                    <input value="waliullah9277" id="login-username" class="login-design" type="username" placeholder="Type Your Username" required><br>
+                    <input value="Wali123@#" id="login-password" class="login-design" type="password" placeholder="Type Your Possword" required><br>
+                    <button onclick="handleLogin(event)" type="submit" class="login-btn">Login</button>
                     <p class="login-desc">Create a account <a class="text-decoration-none" href="registration.html">Register Now</a></p>
                 </form>
             </div>
@@ -90,6 +87,7 @@
 
     <!-- script file here -->
     <script src="./app.js"></script>
+    <script src="./auth.js"></script>
     <script src="./docDetails.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
      

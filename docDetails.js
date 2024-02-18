@@ -75,10 +75,11 @@ const handleAppointment = () => {
   const symptom = document.getElementById("symptom").value;
   const availableTime = document.getElementById("available-time");
   const selectedTime = availableTime.options[availableTime.selectedIndex];
+  const patient_id = localStorage.getItem("patient_id");
   // console.log(selected.value, symptom, selectedTime.value);
   const info = {
     time: selectedTime.value,
-    patient: "Rahim Khan",
+    patient: patient_id,
     doctor: "Dr. Abraham Vandon",
     appointment_types: selected.value,
     appointment_status: "Pending",
@@ -98,4 +99,15 @@ const handleAppointment = () => {
     });
 };
 
+const loadPatientId = () => {
+  const user_id = localStorage.getItem("user_id");
+  fetch(`https://smart-care.onrender.com/patient/list/?user_id=${user_id}`)
+    .then((res) => res.json())
+    .then((data) => {
+      localStorage.setItem("patient_id", data[0].id);
+    });
+};
+
 getparams();
+
+loadPatientId();

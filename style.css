@@ -192,3 +192,41 @@ footer{
 }
 
 /* doctor details page css end here */
+
+
+/* user details css start here */
+
+.user-details-container{
+    height: 80vh;
+    width: 60%;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.all-user{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+}
+
+.user-details-image img{ 
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+/* user details css end here */
+
+
+/* all appoinment css start here */
+
+.all-appoinment-container{
+    width: 90%;
+    margin: auto;
+    height: 80vh;
+}
+
+/* all appoinment css end here */
